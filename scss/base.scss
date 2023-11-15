@@ -1,0 +1,258 @@
+@import "mixin";
+
+$active-color: #4f8ff0;
+$main-color: #222222;
+$light-color: #fff;
+$section-bg-color: #f7f7f7;
+$grey-color: #e6e6e6;
+
+.reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-style {
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden;
+  color: $main-color;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 390px;
+}
+
+.first-title {
+  font-weight: 600;
+  font-size: 56px;
+  color: $active-color;
+  line-height: 150%;
+}
+
+.second-title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.third-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.paragraph {
+  font-weight: 300;
+}
+
+.button-reset {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @include blueBtn;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.padding-block {
+  padding: 80px 0;
+  @media (max-width: 880px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 480px) {
+    padding: 40px 0;
+  }
+}
+
+.address-reset {
+  font-style: normal
+}
+
+.container {
+  @include containerWrap;
+}
+
+.section-header {
+  @include sectionHeader;
+}
+
+.btn-blue {
+  @include blueBtn;
+}
+
+.btn-grey {
+  @include greyBtn;
+}
+
+.hover-effect {
+  position: relative;
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 25.5% 6.5%;
+
+    @include flexWrap(space-between, center, column);
+
+    opacity: 0;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+  }
+
+  &-header {
+    text-align: center;
+    transition: 0.2s ease-in-out;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    line-height: 120%;
+    transition: 0.2s ease-in-out;
+  }
+
+  &-text {
+    font-size: 14px;
+    line-height: 120%;
+    transition: 0.2s ease-in-out;
+  }
+
+  &-second-title {
+    font-weight: 600;
+  }
+
+  &-border {
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .hover-border-1 {
+    left: 0;
+    top: 0;
+  }
+
+  .hover-border-2 {
+    right: 0;
+    top: 0;
+  }
+  .hover-border-3 {
+    left: 0;
+    bottom: 0;
+  }
+  .hover-border-4 {
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+
+    .hover-effect-content {
+      animation: hover 0.3s ease-in-out;
+    }
+
+    .hover-effect-content {
+      opacity: 1;
+    }
+
+    .hover-effect-border {
+      opacity: 1;
+    }
+
+    .hover-border-1 {
+      animation: hover-border-1 0.4s ease-in-out;
+      left: 6.5%;
+      top: 6.5%;
+    }
+
+    .hover-border-2 {
+      animation: hover-border-2 0.4s ease-in-out;
+      right: 6.5%;
+      top: 6.5%;
+    }
+    .hover-border-3 {
+      animation: hover-border-3 0.4s ease-in-out;
+      left: 6.5%;
+      bottom: 6.5%;
+    }
+    .hover-border-4 {
+      animation: hover-border-4 0.4s ease-in-out;
+      right: 6.5%;
+      bottom: 6.5%;
+    }
+  }
+
+  @keyframes hover {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes hover-border-1 {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: 6.5%;
+      top: 6.5%;
+    }
+  }
+
+  @keyframes hover-border-2 {
+    from {
+      right: 0;
+      top: 0;
+    }
+    to {
+      right: 6.5%;
+      top: 6.5%;
+    }
+  }
+
+  @keyframes hover-border-3 {
+    from {
+      left: 0;
+      bottom: 0;
+    }
+    to {
+      left: 6.5%;
+      bottom: 6.5%;
+    }
+  }
+
+  @keyframes hover-border-4 {
+    from {
+      right: 0;
+      bottom: 0;
+    }
+    to {
+      right: 6.5%;
+      bottom: 6.5%;
+    }
+  }
+
+}

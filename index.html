@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.css" integrity="sha512-LZuATklLAriQzj14UjkY1lvEvVJNOQLjuQ34tn7+/RU/mv0bgmkEyMROrbOoAIAAK80JE1rcm35kpHjaBvLNoA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/mixin.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+
+    <title>Парвозащитник</title>
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-top">
+            <div class="container header-top-container">
+                <div class="header-top-contact">
+                    <div class="header-top-link header-link-phone">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 0.833252H6.66663C5.28329 0.833252 4.16663 1.94992 4.16663 3.33325V16.6666C4.16663 18.0499 5.28329 19.1666 6.66663 19.1666H13.3333C14.7166 19.1666 15.8333 18.0499 15.8333 16.6666V3.33325C15.8333 1.94992 14.7166 0.833252 13.3333 0.833252ZM14.1666 14.9999H5.83329V3.33325H14.1666V14.9999ZM11.6666 17.4999H8.33329V16.6666H11.6666V17.4999Z" fill="#4F8FF0"/>
+                        </svg>
+                        <a href="tel:+79220229482">+7 (922) 022-94-82</a>
+                    </div>
+                    <div class="header-top-link header-link-mail">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33329 16.6666C2.87496 16.6666 2.48246 16.5033 2.15579 16.1766C1.82913 15.8499 1.66607 15.4577 1.66663 14.9999V4.99992C1.66663 4.54159 1.82996 4.14909 2.15663 3.82242C2.48329 3.49575 2.87552 3.3327 3.33329 3.33325H16.6666C17.125 3.33325 17.5175 3.49659 17.8441 3.82325C18.1708 4.14992 18.3338 4.54214 18.3333 4.99992V14.9999C18.3333 15.4583 18.17 15.8508 17.8433 16.1774C17.5166 16.5041 17.1244 16.6671 16.6666 16.6666H3.33329ZM9.99996 10.8333L3.33329 6.66659V14.9999H16.6666V6.66659L9.99996 10.8333ZM9.99996 9.16659L16.6666 4.99992H3.33329L9.99996 9.16659ZM3.33329 6.66659V4.99992V14.9999V6.66659Z" fill="#4F8FF0"/>
+                        </svg>
+                        <a href="tel:+79220229482">janis62@yahoo.com</a>
+                    </div>
+                </div>
+                <a href="#" class="header-order-call">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container header-bottom-container">
+                <img src="./img/logo.svg" alt="логотип" class="logo">
+                <nav class="header-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Услуги</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link menu-link-active">О компании</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Наши юристы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Отзывы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Новости</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="mobile-nav">
+                    <div class="burger">
+                        <div class="burger-header">
+                            <button class="burger-btn">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="burger-ico-path" fill-rule="evenodd" clip-rule="evenodd" d="M5.83333 7.29175C5.02793 7.29175 4.375 7.94467 4.375 8.75008C4.375 9.55549 5.02793 10.2084 5.83333 10.2084H29.1667C29.9721 10.2084 30.625 9.55549 30.625 8.75008C30.625 7.94467 29.9721 7.29175 29.1667 7.29175H5.83333ZM10.2083 17.5001C10.2083 16.6946 10.8613 16.0417 11.6667 16.0417H29.1667C29.9721 16.0417 30.625 16.6946 30.625 17.5001C30.625 18.3055 29.9721 18.9584 29.1667 18.9584H11.6667C10.8613 18.9584 10.2083 18.3055 10.2083 17.5001ZM18.9583 26.2501C18.9583 25.4446 19.6112 24.7917 20.4167 24.7917H29.1667C29.9721 24.7917 30.625 25.4446 30.625 26.2501C30.625 27.0555 29.9721 27.7084 29.1667 27.7084H20.4167C19.6112 27.7084 18.9583 27.0555 18.9583 26.2501Z" fill="white"/>
+                                </svg>
+                            </button>  
+                        </div>
+
+                        <div class="burger-body">
+                            <ul class="menu-list burger-menu">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link burger-menu-link">Услуги</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link menu-link-active burger-menu-link-active">О компании</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link burger-menu-link">Наши юристы</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link burger-menu-link">Отзывы</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link burger-menu-link">Новости</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link burger-menu-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-intro">
+                    <h1 class="main-title"><span class="main-title-span">Оказываем весь комплекс</span> Юридических услуг</h1>
+                    <p class="hero-subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+                    <button class="hero-btn">Наши услуги</button>
+                </div>
+                <div class="hero-slider-btns">
+                    <div class="slider-dots-wrapper">
+                        <svg width="28" height="40" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="4" height="40" fill="#4F8FF0"/>
+                            <rect x="12" y="16" width="4" height="24" fill="#E6E6E6"/>
+                            <rect x="24" y="16" width="4" height="24" fill="#E6E6E6"/>
+                        </svg>
+                    </div>
+                    <div class="arrow-btns-wrapper">
+                        <button class="arrow-btn arrow-btn-prev">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z" fill="#E6E6E6"/>
+                            </svg>
+                        </button>
+
+                        <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2"/>
+                        </svg>
+                            
+                        <button class="arrow-btn arrow-btn-next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.68754 18.3333L5.20837 16.8541L12.0625 9.99996L5.20837 3.14579L6.68754 1.66663L15.0209 9.99996L6.68754 18.3333Z" fill="#E6E6E6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+        <section class="services">
+            <div class="container services-container">
+
+                <div class="section-header services-header">
+                    <h2 class="section-header-title services-title">Наши услуги</h2>
+                    <p class="section-header-subtitle services-subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class=" services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Банкротство физических лиц</h3>
+                        <p class="services-card-text">Процедуру банкротства физических лиц в России регулирует закон «О несостоятельности (банкротстве)». </p>                
+                    
+                        <div class="hover-effect-content services-article-hover">
+
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                                        
+                        </div>
+                    
+                    </div>
+                    <div class="services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Сопровождение сделок</h3>
+                        <p class="services-card-text">Инициирование, оформление, осуществление сделки и достижение результата — это именно то, чем мы занимаемся каждый день.</p>
+                    
+                        <div class="hover-effect-content services-article-hover">
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Корпоративные споры</h3>
+                        <p class="services-card-text">Корпоративные споры – споры, связанные с созданием юрлица, управлением или участием в нем</p>
+                    
+                        <div class="hover-effect-content services-article-hover">
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <div class="services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Недвижимость и строительство</h3>
+                        <p class="services-card-text">Консультируем по различным вопросам в области недвижимости, включая градостроительное регулирование, земельные отношения</p>
+                    
+                        <div class="hover-effect-content services-article-hover">
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <div class="services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Возврат страховых премий</h3>
+                        <p class="services-card-text">Для возврата страховой премии нужно подготовить следующий пакет документов: паспорт страхователя; оригинал страхового полиса</p>
+                    
+                        <div class="hover-effect-content services-article-hover">
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <div class="services-card hover-effect">
+                        <svg class="services-card-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="services-card-icon-el" class="" d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                        </svg>
+                        <h3 class="services-card-title">Налоговое право и споры</h3>
+                        <p class="services-card-text">Сопровождение налоговых проверок на любой стадии, анализ и подготовка документов, защита при налоговых спорах.</p>
+                    
+                        <div class="hover-effect-content services-article-hover">
+                            <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_208" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_209" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_210" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                            </svg>
+                            <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_238_211" fill="white">
+                                <path d="M0 0H35V35H0V0Z"/>
+                                </mask>
+                                <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="swiper services-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Банкротство физических лиц</h3>
+                            <p class="services-card-text">Процедуру банкротства физических лиц в России регулирует закон «О...</p>              
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Сопровождение сделок</h3>
+                            <p class="services-card-text">Инициирование, оформление, осуществление сделки и достижение результата...</p>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Корпоративные споры</h3>
+                            <p class="services-card-text">Корпоративные споры – споры, связанные с созданием юрлица...</p>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Недвижимость и строительство</h3>
+                            <p class="services-card-text">Консультируем по различным вопросам в области недвижимости...</p>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Возврат страховых премий</h3>
+                            <p class="services-card-text">Для возврата страховой премии нужно...</p>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6666 5.83329V23.3333H12.1666V5.83329H29.6666ZM29.6666 2.91663H12.1666C10.5625 2.91663 9.24996 4.22913 9.24996 5.83329V23.3333C9.24996 24.9375 10.5625 26.25 12.1666 26.25H29.6666C31.2708 26.25 32.5833 24.9375 32.5833 23.3333V5.83329C32.5833 4.22913 31.2708 2.91663 29.6666 2.91663ZM18.6854 20.4166L13.625 15.3125L15.6666 13.2562L18.6854 16.2895L26.1666 8.74996L28.2083 10.8062L18.6854 20.4166ZM6.33329 8.74996H3.41663V29.1666C3.41663 30.7708 4.72913 32.0833 6.33329 32.0833H26.75V29.1666H6.33329V8.74996Z" fill="#4F8FF0"/>
+                            </svg>
+                            <h3 class="services-card-title">Налоговое право и споры</h3>
+                            <p class="services-card-text">Сопровождение налоговых проверок на любой стадии, анализ и подготовка документов...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="services-btn">Все услуги</button>
+
+            </div>
+        </section>
+        <section class="company-info">
+            <div class="container company-info-container">
+
+                <div class="company-info-descr">
+                    <div class="section-header company-info-header">
+                        <h2 class="section-header-title company-info-title">Юридическая компания <span class="company-info-name">правозащитник</span></h2>
+                    </div>
+
+                    <div class="companu-info-text">
+                        <p class="companu-info-p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+                        <p class="companu-info-p">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+                        <p class="companu-info-p">За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+                    </div>
+
+                    <div class="company-info-btns">
+                        <a href="#!" class="btn-blue">История компании</a>
+                        <a href="#!" class="btn-grey">Сертификаты</a>
+                    </div>
+
+                </div>
+
+                <img src="./img/info/img01.jpg" alt="Книги" class="company-info-img">
+
+            </div>
+        </section>
+        <section class="team">
+            <div class="container team-container">
+                <div class="section-header team-header">
+                    <h2 class="section-header-title team-title">Наши Юристы</h2>
+                    <p class="section-header-subtitle team-subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                </div>
+                <div class="team-slider">
+                    <div class="swiper team-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide team-card hover-effect">
+                                <img src="./img/team/img01.jpg" alt="женщина" class="team-card-img">
+                                <div class="team-card-desr">
+                                    <h3 class="team-card-title">Горюнова Полина Алексеевна</h3>
+                                    <p class="team-card-subtitle">Юрист международного права</p>
+                                </div>
+                                <div class="hover-effect-content">
+
+                                    <div class="hover-effect-header">
+                                        <h3 class="hover-effect-title">Горюнова Полина Алексеевна</h3>
+                                        <p class="hover-effect-subtitle">Юрист международного права</p>
+                                    </div>
+
+                                    <p class="hover-effect-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+
+                                    <h3 class="hover-effect-title hover-effect-second-title">12 лет юридической практики</h3>
+
+
+                                    <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_266" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 0V-1H-1V0H0ZM0 1H25V-1H0V1ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_266)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-2" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_267" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 0H26V-1H25V0ZM0 1H25V-1H0V1ZM24 0V25H26V0H24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_267)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_269" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 25H-1V26H0V25ZM25 24H0V26H25V24ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_269)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-4" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_268" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 25V26H26V25H25ZM24 0V25H26V0H24ZM25 24H0V26H25V24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_268)"/>
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-card hover-effect">
+                                <img src="./img/team/img02.jpg" alt="мужчина" class="team-card-img">
+                                <div class="team-card-desr">
+                                    <h3 class="team-card-title">Миронов Александр Германович</h3>
+                                    <p class="team-card-subtitle">Кредитный адвокат, банковский юрист</p>
+                                </div>
+
+                                <div class="hover-effect-content">
+
+                                    <div class="hover-effect-header">
+                                        <h3 class="hover-effect-title">Миронов Александр Германович</h3>
+                                        <p class="hover-effect-subtitle">Кредитный адвокат, банковский юрист</p>
+                                    </div>
+
+                                    <p class="hover-effect-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+
+                                    <h3 class="hover-effect-title hover-effect-second-title">12 лет юридической практики</h3>
+
+                                    <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_266" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 0V-1H-1V0H0ZM0 1H25V-1H0V1ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_266)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-2" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_267" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 0H26V-1H25V0ZM0 1H25V-1H0V1ZM24 0V25H26V0H24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_267)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_269" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 25H-1V26H0V25ZM25 24H0V26H25V24ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_269)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-4" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_268" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 25V26H26V25H25ZM24 0V25H26V0H24ZM25 24H0V26H25V24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_268)"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide team-card hover-effect">
+                                <img src="./img/team/img03.jpg" alt="женщина" class="team-card-img">
+                                <div class="team-card-desr">
+                                    <h3 class="team-card-title">Шестакова Елизавета Егоровна</h3>
+                                    <p class="team-card-subtitle">Юридический консультант</p>
+                                </div>
+
+                                <div class="hover-effect-content">
+
+                                    <div class="hover-effect-header">
+                                        <h3 class="hover-effect-title">Шестакова Елизавета Егоровна</h3>
+                                        <p class="hover-effect-subtitle">Юридический консультант</p>
+                                    </div>
+
+                                    <p class="hover-effect-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+
+                                    <h3 class="hover-effect-title hover-effect-second-title">12 лет юридической практики</h3>
+
+
+                                    <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_266" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 0V-1H-1V0H0ZM0 1H25V-1H0V1ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_266)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-2" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_267" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 0H26V-1H25V0ZM0 1H25V-1H0V1ZM24 0V25H26V0H24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_267)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_269" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 25H-1V26H0V25ZM25 24H0V26H25V24ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_269)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-4" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_268" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 25V26H26V25H25ZM24 0V25H26V0H24ZM25 24H0V26H25V24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_268)"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide team-card hover-effect">
+                                <img src="./img/team/img04.jpg" alt="мужчина" class="team-card-img">
+                                <div class="team-card-desr">
+                                    <h3 class="team-card-title">Архипов Максим Константинович</h3>
+                                    <p class="team-card-subtitle">Корпоративный юрист</p>
+                                </div>
+
+                                <div class="hover-effect-content">
+
+                                    <div class="hover-effect-header">
+                                        <h3 class="hover-effect-title">Архипов Максим Константинович</h3>
+                                        <p class="hover-effect-subtitle">Корпоративный юрист</p>
+                                    </div>
+
+                                    <p class="hover-effect-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+
+                                    <h3 class="hover-effect-title hover-effect-second-title">12 лет юридической практики</h3>
+
+
+                                    <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_266" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 0V-1H-1V0H0ZM0 1H25V-1H0V1ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_266)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-2" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_267" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 0H26V-1H25V0ZM0 1H25V-1H0V1ZM24 0V25H26V0H24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_267)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_269" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M0 25H-1V26H0V25ZM25 24H0V26H25V24ZM1 25V0H-1V25H1Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_269)"/>
+                                    </svg>
+                                    <svg class="hover-effect-border hover-border-4" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_229_268" fill="white">
+                                        <path d="M0 0H25V25H0V0Z"/>
+                                        </mask>
+                                        <path d="M25 25V26H26V25H25ZM24 0V25H26V0H24ZM25 24H0V26H25V24Z" fill="#4F8FF0" mask="url(#path-1-inside-1_229_268)"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container reviews-container">
+
+                <div class="reviews-header">
+                    <div class="section-header reviews-section-header">
+                        <h2 class="section-header-title reviews-title">Что о нас говорят клиенты</h2>
+                    </div>
+                    <div class="reviews-slider-btns">
+                        <button class="reviews-slider-prev">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3055 18.8334L5.97217 10.5L14.3055 2.16669L15.7847 3.64585L8.9305 10.5L15.7847 17.3542L14.3055 18.8334Z" fill="#4F8FF0"/>
+                            </svg>
+                        </button>
+
+                        <svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.07337" y1="29.4424" x2="15.1013" y2="0.680956" stroke="#4F8FF0" stroke-width="2"/>
+                        </svg>
+                            
+                        <button class="reviews-slider-next">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.68754 18.8334L5.20837 17.3542L12.0625 10.5L5.20837 3.64585L6.68754 2.16669L15.0209 10.5L6.68754 18.8334Z" fill="#4F8FF0"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reviews-slider">
+
+                    <div class="swiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide reviews-card">
+                                <div class="reviews-card-header">
+                                    <img src="./img/reviews/user-img01.jpg" alt="женщина" class="reviews-card-user">
+                                    <div class="reviews-card-user-info">
+                                        <p class="reviews-card-subtitle">ООО “ИТ Консалтинг”</p>
+                                        <h3 class="reviews-card-title">Логинова Анастасия</h3>
+                                    </div>
+                                </div>
+                                <p class="reviews-card-text">
+                                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов ...
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide reviews-card">
+                                <div class="reviews-card-header">
+                                    <img src="./img/reviews/user-img02.jpg" alt="мужчина" class="reviews-card-user">
+                                    <div class="reviews-card-user-info">
+                                        <p class="reviews-card-subtitle">АО “ПРОМАРШ”</p>
+                                        <h3 class="reviews-card-title">Макаров Сергей</h3>
+                                    </div>
+                                </div>
+                                <p class="reviews-card-text">
+                                    Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide reviews-card">
+                                <div class="reviews-card-header">
+                                    <img src="./img/reviews/user-img01.jpg" alt="женщина" class="reviews-card-user">
+                                    <div class="reviews-card-user-info">
+                                        <p class="reviews-card-subtitle">ООО “ИТ Консалтинг”</p>
+                                        <h3 class="reviews-card-title">Логинова Анастасия</h3>
+                                    </div>
+                                </div>
+                                <p class="reviews-card-text">
+                                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов ...
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide reviews-card">
+                                <div class="reviews-card-header">
+                                    <img src="./img/reviews/user-img02.jpg" alt="мужчина" class="reviews-card-user">
+                                    <div class="reviews-card-user-info">
+                                        <p class="reviews-card-subtitle">АО “ПРОМАРШ”</p>
+                                        <h3 class="reviews-card-title">Макаров Сергей</h3>
+                                    </div>
+                                </div>
+                                <p class="reviews-card-text">
+                                    Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="reviews-btns">
+                    <button>Все отзывы</button>
+                    <button class="btn-grey">Написать отзыв</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="materials">
+            <div class="container materials-container">
+                <div class="section-header materials-header">
+                    <h2 class="section-header-title materials-title">Полезные материалы</h2>
+                    <p class="section-header-subtitle materials-subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                </div>
+
+                <div class="materials-slider">
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide materials-article">
+                                <div class="materials-article-header hover-effect">
+                                    <img src="./img/materials/article-img01.jpg" alt="небоскребы" class="materials-article-img">
+                                
+                                    <div class="hover-effect-content materials-article-hover">
+        
+                                        <svg class="materials-article-hover-img" width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.41748" width="41.165" height="40" fill="white"/>
+                                            <path d="M30.6095 19.7875C29.853 17.886 28.5396 16.2416 26.8318 15.0576C25.124 13.8735 23.0965 13.2016 21 13.125C18.9035 13.2016 16.876 13.8735 15.1682 15.0576C13.4604 16.2416 12.1471 17.886 11.3906 19.7875C11.3395 19.9248 11.3395 20.0752 11.3906 20.2125C12.1471 22.114 13.4604 23.7584 15.1682 24.9424C16.876 26.1265 18.9035 26.7984 21 26.875C23.0965 26.7984 25.124 26.1265 26.8318 24.9424C28.5396 23.7584 29.853 22.114 30.6095 20.2125C30.6606 20.0752 30.6606 19.9248 30.6095 19.7875ZM21 25.625C17.591 25.625 13.9891 23.1688 12.6834 20C13.9891 16.8312 17.591 14.375 21 14.375C24.409 14.375 28.0109 16.8312 29.3166 20C28.0109 23.1688 24.409 25.625 21 25.625Z" fill="#4F8FF0"/>
+                                            <path d="M21 16.25C20.2367 16.25 19.4905 16.4699 18.8559 16.882C18.2213 17.294 17.7266 17.8797 17.4345 18.5649C17.1424 19.2502 17.066 20.0042 17.2149 20.7316C17.3638 21.459 17.7314 22.1272 18.2711 22.6517C18.8108 23.1761 19.4985 23.5333 20.2471 23.6779C20.9957 23.8226 21.7717 23.7484 22.4768 23.4645C23.182 23.1807 23.7847 22.7001 24.2088 22.0834C24.6329 21.4667 24.8592 20.7417 24.8592 20C24.8592 19.0054 24.4526 18.0516 23.7289 17.3483C23.0051 16.6451 22.0235 16.25 21 16.25ZM21 22.5C20.4911 22.5 19.9937 22.3534 19.5706 22.0787C19.1475 21.804 18.8177 21.4135 18.623 20.9567C18.4283 20.4999 18.3773 19.9972 18.4766 19.5123C18.5759 19.0273 18.8209 18.5819 19.1807 18.2322C19.5405 17.8826 19.999 17.6445 20.498 17.548C20.9971 17.4516 21.5144 17.5011 21.9845 17.6903C22.4547 17.8795 22.8565 18.2 23.1392 18.6111C23.4219 19.0222 23.5728 19.5055 23.5728 20C23.5728 20.663 23.3017 21.2989 22.8192 21.7678C22.3367 22.2366 21.6823 22.5 21 22.5Z" fill="#4F8FF0"/>
+                                        </svg>
+                                            
+                                            
+            
+
+                                        <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_208" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_209" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_210" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_211" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                                        </svg>
+                                        
+                                    </div>
+                                
+                                </div>
+                                <div class="materials-article-body">
+                                    <h3 class="materials-article-title">Воистину радостный звук: шёпот бессменных лидеров</h3>
+                                    <date class="materials-article-date">24 апр. 2023 г.</date>
+                                    <p class="materials-article-text">Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений. </p>
+                                </div>
+        
+        
+                            </article>
+                            <article class="swiper-slide materials-article">
+                                <div class="materials-article-header hover-effect">
+                                    <img src="./img/materials/article-img02.jpg" alt="эйфелева башня" class="materials-article-img">
+                                
+                                    <div class="hover-effect-content materials-article-hover">
+        
+                                        <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.41748" width="41.165" height="40" fill="white"/>
+                                            <path d="M30.6095 19.7875C29.853 17.886 28.5396 16.2416 26.8318 15.0576C25.124 13.8735 23.0965 13.2016 21 13.125C18.9035 13.2016 16.876 13.8735 15.1682 15.0576C13.4604 16.2416 12.1471 17.886 11.3906 19.7875C11.3395 19.9248 11.3395 20.0752 11.3906 20.2125C12.1471 22.114 13.4604 23.7584 15.1682 24.9424C16.876 26.1265 18.9035 26.7984 21 26.875C23.0965 26.7984 25.124 26.1265 26.8318 24.9424C28.5396 23.7584 29.853 22.114 30.6095 20.2125C30.6606 20.0752 30.6606 19.9248 30.6095 19.7875ZM21 25.625C17.591 25.625 13.9891 23.1688 12.6834 20C13.9891 16.8312 17.591 14.375 21 14.375C24.409 14.375 28.0109 16.8312 29.3166 20C28.0109 23.1688 24.409 25.625 21 25.625Z" fill="#4F8FF0"/>
+                                            <path d="M21 16.25C20.2367 16.25 19.4905 16.4699 18.8559 16.882C18.2213 17.294 17.7266 17.8797 17.4345 18.5649C17.1424 19.2502 17.066 20.0042 17.2149 20.7316C17.3638 21.459 17.7314 22.1272 18.2711 22.6517C18.8108 23.1761 19.4985 23.5333 20.2471 23.6779C20.9957 23.8226 21.7717 23.7484 22.4768 23.4645C23.182 23.1807 23.7847 22.7001 24.2088 22.0834C24.6329 21.4667 24.8592 20.7417 24.8592 20C24.8592 19.0054 24.4526 18.0516 23.7289 17.3483C23.0051 16.6451 22.0235 16.25 21 16.25ZM21 22.5C20.4911 22.5 19.9937 22.3534 19.5706 22.0787C19.1475 21.804 18.8177 21.4135 18.623 20.9567C18.4283 20.4999 18.3773 19.9972 18.4766 19.5123C18.5759 19.0273 18.8209 18.5819 19.1807 18.2322C19.5405 17.8826 19.999 17.6445 20.498 17.548C20.9971 17.4516 21.5144 17.5011 21.9845 17.6903C22.4547 17.8795 22.8565 18.2 23.1392 18.6111C23.4219 19.0222 23.5728 19.5055 23.5728 20C23.5728 20.663 23.3017 21.2989 22.8192 21.7678C22.3367 22.2366 21.6823 22.5 21 22.5Z" fill="#4F8FF0"/>
+                                        </svg>
+            
+                                        <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_208" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_209" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_210" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_211" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                                <div class="materials-article-body">
+                                    <h3 class="materials-article-title">Франция намерена исследовать, почему объемы выросли</h3>
+                                    <date class="materials-article-date">12 мар. 2023 г.</date>
+                                    <p class="materials-article-text">Для современного мира новая модель организационной деятельности влечет за собой процесс внедрения и модернизации вывода текущих активов. Являясь всего лишь частью общей картины, базовые сценарии поведения...</p>
+                                </div>
+                            </article>
+                            <article class="swiper-slide materials-article">
+                                <div class="materials-article-header hover-effect">
+                                    <img src="./img/materials/article-img03.jpg" alt="руки" class="materials-article-img">
+                                    
+                                    <div class="hover-effect-content materials-article-hover">
+        
+                                        <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.41748" width="41.165" height="40" fill="white"/>
+                                            <path d="M30.6095 19.7875C29.853 17.886 28.5396 16.2416 26.8318 15.0576C25.124 13.8735 23.0965 13.2016 21 13.125C18.9035 13.2016 16.876 13.8735 15.1682 15.0576C13.4604 16.2416 12.1471 17.886 11.3906 19.7875C11.3395 19.9248 11.3395 20.0752 11.3906 20.2125C12.1471 22.114 13.4604 23.7584 15.1682 24.9424C16.876 26.1265 18.9035 26.7984 21 26.875C23.0965 26.7984 25.124 26.1265 26.8318 24.9424C28.5396 23.7584 29.853 22.114 30.6095 20.2125C30.6606 20.0752 30.6606 19.9248 30.6095 19.7875ZM21 25.625C17.591 25.625 13.9891 23.1688 12.6834 20C13.9891 16.8312 17.591 14.375 21 14.375C24.409 14.375 28.0109 16.8312 29.3166 20C28.0109 23.1688 24.409 25.625 21 25.625Z" fill="#4F8FF0"/>
+                                            <path d="M21 16.25C20.2367 16.25 19.4905 16.4699 18.8559 16.882C18.2213 17.294 17.7266 17.8797 17.4345 18.5649C17.1424 19.2502 17.066 20.0042 17.2149 20.7316C17.3638 21.459 17.7314 22.1272 18.2711 22.6517C18.8108 23.1761 19.4985 23.5333 20.2471 23.6779C20.9957 23.8226 21.7717 23.7484 22.4768 23.4645C23.182 23.1807 23.7847 22.7001 24.2088 22.0834C24.6329 21.4667 24.8592 20.7417 24.8592 20C24.8592 19.0054 24.4526 18.0516 23.7289 17.3483C23.0051 16.6451 22.0235 16.25 21 16.25ZM21 22.5C20.4911 22.5 19.9937 22.3534 19.5706 22.0787C19.1475 21.804 18.8177 21.4135 18.623 20.9567C18.4283 20.4999 18.3773 19.9972 18.4766 19.5123C18.5759 19.0273 18.8209 18.5819 19.1807 18.2322C19.5405 17.8826 19.999 17.6445 20.498 17.548C20.9971 17.4516 21.5144 17.5011 21.9845 17.6903C22.4547 17.8795 22.8565 18.2 23.1392 18.6111C23.4219 19.0222 23.5728 19.5055 23.5728 20C23.5728 20.663 23.3017 21.2989 22.8192 21.7678C22.3367 22.2366 21.6823 22.5 21 22.5Z" fill="#4F8FF0"/>
+                                        </svg>
+            
+                                        <svg class="hover-effect-border hover-border-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_208" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 0V-1H-1V0H0ZM0 1H35V-1H0V1ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_208)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_209" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 0H36V-1H35V0ZM0 1H35V-1H0V1ZM34 0V35H36V0H34Z" fill="white" mask="url(#path-1-inside-1_238_209)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-3" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_210" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M0 35H-1V36H0V35ZM35 34H0V36H35V34ZM1 35V0H-1V35H1Z" fill="white" mask="url(#path-1-inside-1_238_210)"/>
+                                        </svg>
+                                        <svg class="hover-effect-border hover-border-4" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_238_211" fill="white">
+                                            <path d="M0 0H35V35H0V0Z"/>
+                                            </mask>
+                                            <path d="M35 35V36H36V35H35ZM34 0V35H36V0H34ZM35 34H0V36H35V34Z" fill="white" mask="url(#path-1-inside-1_238_211)"/>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                                <div class="materials-article-body">
+                                    <h3 class="materials-article-title">Сплочённость команды профессионалов продолжает удивлять</h3>
+                                    <date class="materials-article-date">02 фев. 2023 г.</date>
+                                    <p class="materials-article-text">Современные технологии достигли такого уровня, что курс на социально-ориентированный национальный проект способствует повышению качества соответствующих условий активизации. </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <button class="materials-btn">Все новости</button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="padding-block">
+
+                <div class="footer-header">
+                    <img src="./img/logo.svg" alt="логотип">
+                    <p class="footer-header-text">Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений.</p>
+                </div>
+
+                <div class="footer-body">
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="55" height="55" fill="#2C2C2C"/>
+                                <path d="M28 20.6667C28.884 20.6667 29.7319 21.0179 30.357 21.6431C30.9821 22.2682 31.3333 23.116 31.3333 24.0001C31.3333 24.4378 31.2471 24.8713 31.0796 25.2757C30.912 25.6801 30.6665 26.0476 30.357 26.3571C30.0475 26.6666 29.68 26.9122 29.2756 27.0797C28.8712 27.2472 28.4377 27.3334 28 27.3334C27.1159 27.3334 26.2681 26.9822 25.6429 26.3571C25.0178 25.732 24.6666 24.8841 24.6666 24.0001C24.6666 23.116 25.0178 22.2682 25.6429 21.6431C26.2681 21.0179 27.1159 20.6667 28 20.6667ZM28 14.6667C30.4753 14.6667 32.8493 15.6501 34.5996 17.4004C36.35 19.1508 37.3333 21.5247 37.3333 24.0001C37.3333 31.0001 28 41.3334 28 41.3334C28 41.3334 18.6666 31.0001 18.6666 24.0001C18.6666 21.5247 19.65 19.1508 21.4003 17.4004C23.1506 15.6501 25.5246 14.6667 28 14.6667ZM28 17.3334C26.2318 17.3334 24.5362 18.0358 23.2859 19.286C22.0357 20.5363 21.3333 22.232 21.3333 24.0001C21.3333 25.3334 21.3333 28.0001 28 36.9467C34.6666 28.0001 34.6666 25.3334 34.6666 24.0001C34.6666 22.232 33.9642 20.5363 32.714 19.286C31.4638 18.0358 29.7681 17.3334 28 17.3334Z" fill="#F8F5F4"/>
+                            </svg>
+                                
+                            <div class="contact-item-info">
+                                <h4 class="contact-item-title">Наш адрес</h4>
+                                <address>г. Одинцово, пр. Будапештсткая, 40</address>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="55" height="55" fill="#2C2C2C"/>
+                                <path d="M33.3333 13.3333H22.6666C20.4533 13.3333 18.6666 15.1199 18.6666 17.3333V38.6666C18.6666 40.8799 20.4533 42.6666 22.6666 42.6666H33.3333C35.5466 42.6666 37.3333 40.8799 37.3333 38.6666V17.3333C37.3333 15.1199 35.5466 13.3333 33.3333 13.3333ZM34.6666 35.9999H21.3333V17.3333H34.6666V35.9999ZM30.6666 39.9999H25.3333V38.6666H30.6666V39.9999Z" fill="#F8F5F4"/>
+                            </svg>
+                            <div class="contact-item-info">
+                                <h4 class="contact-item-title">Запись на консультанцию</h4>
+                                <a href="tel:+79220229482">+7 (922) 022-94-82</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="55" height="55" fill="#2C2C2C"/>
+                                <path d="M17.3333 38.1666C16.6 38.1666 15.972 37.9053 15.4493 37.3826C14.9266 36.8599 14.6657 36.2324 14.6666 35.4999V19.4999C14.6666 18.7666 14.928 18.1386 15.4506 17.6159C15.9733 17.0933 16.6009 16.8324 17.3333 16.8333H38.6666C39.4 16.8333 40.028 17.0946 40.5506 17.6173C41.0733 18.1399 41.3342 18.7675 41.3333 19.4999V35.4999C41.3333 36.2333 41.072 36.8613 40.5493 37.3839C40.0266 37.9066 39.3991 38.1675 38.6666 38.1666H17.3333ZM28 28.8333L17.3333 22.1666V35.4999H38.6666V22.1666L28 28.8333ZM28 26.1666L38.6666 19.4999H17.3333L28 26.1666ZM17.3333 22.1666V19.4999V35.4999V22.1666Z" fill="#F8F5F4"/>
+                            </svg>
+                            <div class="contact-item-info">
+                                <h4 class="contact-item-title">Корреспонденция</h4>
+                                <a href="mailto:janis62@yahoo.com">janis62@yahoo.com</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="footer-body-wrap">
+
+                        <ul class="menu-list footer-menu">
+                            <li class="menu-item footer-menu-item">
+                                <a href="#" class="menu-link footer-menu-link">Услуги</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link footer-menu-link">О компании</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link footer-menu-link">Сертификаты</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link footer-menu-link">Отзывы</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link footer-menu-link">Полезные материалы</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link footer-menu-link">Благотворительность</a>
+                            </li>
+                        </ul>
+        
+                        <div class="ask-question">
+                            <div class="person-answer">
+                                <img src="./img/footer/person.png" alt="мужчина" class="person-answer-photo">
+                                <div>
+                                    <h3 class="person-answer-name">Миронов Александр</h3>
+                                    <p class="person-answer-prof">Ведущий юрист</p>
+                                </div>
+                            </div>
+                            <p class="ask-question-text">Есть над чем задуматься: тщательные исследования конкурентов разоблачены. Идейные соображения высшего порядка, а также перспективное планирование играет </p>
+                            <button class="ask-question-btn">Задать вопрос юристу</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <a href="#!">Все права защищены, 2023</a>
+                <a href="#!">Политика обработки персональных данных</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
